@@ -1,0 +1,398 @@
+html {
+    font-family: "poppins-bold", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #212121;
+}
+
+
+/* SECCION DEL HEADER */
+
+header {
+    background: #212121;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index:2;
+}
+.main-nav {
+    margin-right: 70px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 0px 20px;
+    padding:15px 20px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: deeppink;
+    font-size: 24px;
+    transition: 0.5s;
+    border-bottom: 7px solid deeppink;
+}
+
+.logo img{
+    height: 35px;
+    display: flex;
+    padding-left:110px 
+}
+
+.logo img:hover {
+    /* transform: scale(1.01); */
+    background-color: deeppink;
+    transition: .5s;
+
+}
+.main-nav nav img{
+    display: none;
+}
+.main-nav #btn_menu {
+    display: none;
+}
+
+/* SECCION DEL INICIO */
+
+#inicio {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-overlay {
+    width: 100%;
+    height: 965px;
+    background: url(imagenes/layered-peaks-haikei.jpg) fixed no-repeat center;
+    background-size:cover;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-overlay h3, h1, p, span{
+    margin: 0px 0px;
+    color: white;
+}
+.intro-overlay h1 {
+    font-size: 90px;
+    text-align: center;
+}
+.intro-overlay h3 {
+    font-size: 25px;
+    text-align: center;
+    color:deeppink;
+    font-weight: bold;
+}
+.intro-overlay p span{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: italic ;
+    word-spacing: 10px;
+}
+
+.text {
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.boton {
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 3px solid gray;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: 1s;
+    position: relative;
+    top: 60px;
+}
+.boton-slide:hover, .boton-slide:focus {
+    box-shadow: inset 13em 0 0 0 deeppink;
+    border-color: deeppink;
+    color: white;
+}
+
+/* SECCION DEL RESUMEN, FOTO PERSONAL Y HABILIDADES */
+
+#resumen {
+    width: 100%;
+    min-height: 895px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #212121;
+}
+.spin {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+.foto img {
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+    -15px -15px 30px rgb(70, 70, 70) /* -15px 15px 25px rgba(0, 0, 0, 0.3) */;
+}
+.foto {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto img:hover {
+    transform: scale(1.03);
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+    -15px -15px 30px rgb(80, 80, 80);
+    transition: all 0.6s ease;
+}
+.descripcion {
+    width: 70%;
+    padding-right: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.descripcion h1 {
+    color: deeppink;
+    padding: 20px 0px;
+    font-size: 40px;
+    text-decoration: underline white;
+    text-shadow: 15px 15px 30px rgb(50, 50, 50), -15px -15px 30px rgb(100, 100, 100) ;
+}
+
+.descripcion h1:hover {
+    font-size: 45px;
+    transition: .5s;
+}
+.descripcion p:hover {
+    font-size: 22px;
+    transition: .5s;
+}
+.descripcion p {
+    color: rgba(255, 255, 255, 1);
+    padding: 20px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.icons-skills {
+    background-color: #212121;
+    width: 100%;
+    height: 495px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-skills {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin:0px 0px 50px 0px;
+}
+.text-skills h1{
+    color: deeppink;
+    font-size: 40px;
+    text-decoration: underline white;
+    text-shadow: 15px 15px 30px rgb(50, 50, 50), -15px -15px 30px rgb(100, 100, 100) ;
+    
+}
+.text-skills h1:hover {
+    font-size: 45px;
+    transition: .5s;
+}
+.icons-logos {
+    display: flex;
+}
+
+.icons-skills img {
+    width: 130px;
+    height: 130px;
+    margin: 20px 50px;
+    border-radius: 16px;
+}
+.icons-skills img:hover {
+    box-shadow: 15px 15px 30px rgb(50, 50, 50), -15px -15px 30px rgb(100, 100, 100);
+    transform: scale(1.1);
+    background-color: white;
+    transition: .8s;
+}
+
+.icons {
+    width: 80%;
+    padding-left: 180px;
+}
+.dowloadcv {
+    width: 20%;
+    padding-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dowloadcv button {
+    width: 200px;
+    height: 70px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 20px 0px;
+    background-color: transparent;
+    border: 3px solid gray;
+    transition: 1.8s;
+}
+.dowloadcv a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/* HACIENDO LA PAGINA WEB ADAPTABLE A MOVIL  */
+
+
+/*              1 - HEADERR MENU             */
+
+@media screen and (max-width: 1200px) {
+
+    header {
+        max-height: 70px;
+    }
+
+    .main-nav nav {
+        margin: 0px;
+        padding: 20px;
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        height: 100vh;
+        width: 200px;
+        top: 0px;
+        right: -250px;
+        background-color: black;
+        transition: all .4s;
+        z-index: 1;
+    }
+    .main-nav a {
+        margin-top: 20px;
+    }
+
+    #black_menu {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+    .main-nav #btn_menu {
+        margin-left: 20px;
+        margin-right: 50px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all .5s;
+    }
+    .main-nav #btn_menu:hover {
+        background: deeppink;
+    }
+
+}
+
+/*                - HEADERR MENU             */
+
+
+/*             2 - INICIO DE LA PAGINA              */
+
+@media screen and (max-width: 1860px) {
+
+    #resumen {
+        height: auto;
+    }
+
+    .icons-skills {
+        height: auto;
+        padding-top: 30px;
+    }
+
+    .icons {
+        padding: 0px;
+        text-align: center;
+    }
+
+} 
+
+@media screen and (max-width: 1200px) {
+
+    #resumen {
+        height: auto;
+    }
+
+    .spin {
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+        height: auto;
+        text-align: center;
+    }
+
+    .spin .descripcion {
+        padding-right: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .icons {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .icons-skills {
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .hab-cont .icons-logos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons-logos .icons {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons-skills {
+        position: relative;
+    }
+
+    .dowloadcv {
+        padding: 0px;
+    }
+
+}
