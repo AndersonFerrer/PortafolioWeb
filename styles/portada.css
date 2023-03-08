@@ -1,0 +1,172 @@
+/* °°°°°°°°°°°°°°°°°°°°°°°° // SECCION DE PORTADA // °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
+
+.portada {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: url(../assets/bg2.jpg);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.presentacion {
+    font-size: 24px;
+    padding-left: 120px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 32px 0px;
+    position: relative;
+    z-index: 2;
+    
+}
+.presentacion h1 {
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.2;
+    background-image:linear-gradient(to right, #93C5FD, #60A5FA, #3B82F6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.presentacion p {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight:600;
+}
+.presentacion .redes {
+    display: flex;
+    gap: 32px;
+}
+/* .presentacion a {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: end;
+    transition: all .5s;
+    font-size: 52px;
+    color: black;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.presentacion a:hover {
+    translate: 0px -5px;   
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);     
+} */
+.foto{
+    width: 50%;
+    height: 100vh;
+    display: grid;
+    position: relative;
+    place-content: center;
+}
+.foto img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: 200px;
+    width: 600px;
+}
+
+
+.social-links,.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .social-btn {
+    cursor: pointer;
+    height: 75px;
+    width: 75px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+    justify-content: center;
+  }
+  
+  .social-btn svg {
+    height: 38px;
+    width: 38px;
+  }
+  
+  .social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    margin-left: 5px;
+  }
+  
+  .social-btn:hover {
+    width: 200px;
+    border-radius: 5px;
+  }
+  
+  .social-btn:hover span {
+    padding: 2px;
+    width: 115px;
+  }
+  
+  #twitter svg {
+    fill: #1da1f2;
+  }
+  
+  #linkedin svg {
+    fill: #0e76a8;
+  }
+  
+  #github {
+    fill: #333;
+  }
+
+  
+@media screen and (max-width: 700px) { 
+    .presentacion {
+        width: 100%;
+        padding: 12px;
+        height: auto;
+    }
+    .portada {
+        width: 100%;
+        flex-direction: column;
+    }
+    .presentacion h1 {
+        font-size: 24px;
+    }
+    .presentacion p {
+        font-size: 16px;
+    }
+    .foto {
+        width: 100%; 
+        height: auto;
+        justify-content: end;
+    }
+    .foto img{
+        position: static;
+        right: 0;
+        width: 300px;
+    }
+    .aboutme img {
+        border-radius: 10px;
+    }
+}

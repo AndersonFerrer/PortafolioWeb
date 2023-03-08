@@ -1,0 +1,76 @@
+.card-skill {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: white;
+    background-size: cover;
+    padding: 6px;
+    transition: all .5s;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.contain-skills {
+    box-sizing: border-box;
+    width: 80%;
+/*     max-width: 1112px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 32px;
+    flex: none;
+order: 0;
+flex-grow: 0;
+padding: 0px;
+}
+.svgT {
+    font-size: 100px;
+}
+.skill {
+    width: 100%;
+    height: 60%;
+    font-size:58px;
+    color:white;
+    background-image:linear-gradient(to right, #93C5FD, #60A5FA, #3B82F6);
+    background-size: cover;
+    border-radius: 15px 15px 50% 50%;
+    display: grid;
+    place-content: center;
+    transition: all .5s;
+}
+.card-skill:hover .skill{
+    border-radius: 15px;
+    transform: translateY(-12px);
+}
+.card-skill:hover {
+/*     transform: translateY(-12px); */
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+.card-skill:hover .skill-text h1 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image:linear-gradient(to right, #93C5FD, #60A5FA, #3B82F6);
+    color: none;
+    -webkit-text-fill-color: transparent;
+    
+    font-weight: bolder;
+}
+
+.skill-text {
+    width: 100%;
+    height: 40%;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    transition: all .5s;
+}
+.skill-text h1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    background-image:linear-gradient(to right, #93C5FD, #60A5FA, #3B82F6);
+    border-radius: 15px;
+    padding: 6px 12px;
+    transition: all .5s;
+}
