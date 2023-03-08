@@ -55,9 +55,9 @@
         border-radius: 10px;
     }
 }
-button {
-    font-family: inherit;
+.btn-pdf {
     font-size: 20px;
+    text-decoration: none;
     background: black;
     color: white;
     padding: 0.7em 1em;
@@ -71,13 +71,13 @@ button {
     transition: all 0.2s;
   }
   
-  button span {
+  .btn-pdf span {
     display: block;
     margin-left: 0.3em;
     transition: all 0.3s ease-in-out;
   }
   
-  button i {
+  .btn-pdf i {
     width: 24px;
     height: 24px;
     display: block;
@@ -85,19 +85,19 @@ button {
     transition: transform 0.3s ease-in-out;
   }
   
-  button:hover .svg-wrapper {
+  .btn-pdf:hover .svg-wrapper {
     animation: fly-1 0.6s ease-in-out infinite alternate;
   }
   
-  button:hover i {
+  .btn-pdf:hover i {
     transform: translateX(3em) rotate(45deg) scale(1.3);
   }
   
-  button:hover span {
+  .btn-pdf:hover span {
     transform: translateX(8em);
   }
   
-  button:active {
+  .btn-pdf:active {
     transform: scale(0.95);
   }
   
