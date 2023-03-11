@@ -12,6 +12,7 @@ body::-webkit-scrollbar {
 }
 body {
     font-family: 'Sora Custom',Arial,sans-serif;
+    background-color: #3B82F6;
     
 }
 button {

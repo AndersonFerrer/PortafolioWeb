@@ -15,9 +15,9 @@
 /*     max-width: 1112px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     height: auto;
+    justify-content: center;
     gap: 32px;
     flex: none;
 order: 0;

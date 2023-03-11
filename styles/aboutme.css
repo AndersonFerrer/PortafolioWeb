@@ -54,6 +54,9 @@
         width: 100%;
         border-radius: 10px;
     }
+    .bg-about {
+      width: 100%;
+    }
 }
 .btn-pdf {
     font-size: 20px;
