@@ -1,0 +1,56 @@
+.header {
+    width: 100%;
+    padding: 16px 64px;
+    height: 100px;
+    background-color: white;
+    box-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    scroll-behavior: smooth;
+}
+.header-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.header-bg h1{
+    color:#039be5;
+    font-size: 48px; 
+    font-weight: bolder;
+  }
+  .header-bg h2{
+    color:#000000;
+    font-size: 48px; 
+    font-weight: bolder;
+  }
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    transition: all .5s ease;
+}
+.header-nav nav ul{
+    display: flex;
+    gap: 24px;
+    scroll-behavior: smooth;
+}
+.header-nav a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    transition: all .3s ease;
+    scroll-behavior: smooth;
+}
+.header-nav a:hover {
+    color: #039be5;
+}
+.header-nav li:focus {
+    color: #039be5;
+}
