@@ -11,7 +11,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #f1f3f4;
         box-sizing: border-box;
         padding: 64px 24px;
 }
@@ -20,7 +19,7 @@
     width: 100%;
     max-width: 1112px;
     background-color: white;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
     border-radius: 15px;
     padding: 24px;
     display: flex;
@@ -64,12 +63,14 @@
 .contac-info h1 {
     width: 100%;
     font-size: 32px;
+    line-height: 1.2;
     font-weight: 600;
     margin-bottom: 64px;
     text-align: start;
 }
 .contac-info p {
     font-size: 20px;
+    z-index: 10
 }
 .contac-info i {
     color: white;
@@ -149,10 +150,7 @@ textarea:valid {
     padding: 12px 12px;
 }
 
-@media screen and (max-width: 760px) {
-
-}
-@media  screen and (max-width: 970px) {
+@media  screen and (max-width: 1036px) {
     .contain-form {
         flex-direction: column;  
     }

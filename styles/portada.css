@@ -1,27 +1,33 @@
 /* °°°°°°°°°°°°°°°°°°°°°°°° // SECCION DE PORTADA // °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
 
 .portada {
-    padding: 128px;
-    padding-top: 228px;
-    width: 100%;
-    height: auto;
-    max-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    background: url(../assets/bg2.jpg);
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-color: #fff;
+  background-image: url(https://uploads-ssl.webflow.com/5d362331b9f50fdd0566cb47/6103f279ce95235370867751_bg-pattern.svg);
+  background-position: 50% 0px;
+  padding: 0px 24px;
+  padding-top: 130px;
+  background-attachment: scroll;
+  background-repeat: repeat-x;
+  margin-top: 68px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+.contain-portada {
+  width: 100%;
+  max-width: 1112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .presentacion {
-    font-size: 24px;
     box-sizing: border-box;
-    width: 50%;
+    width: 60%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -33,18 +39,21 @@
     
 }
 .presentacion h1 {
-    font-size: 72px;
+  font-size: 3.338rem;
     font-weight: bold;
     line-height: 1.2;
     background-image:linear-gradient(to right, #93C5FD, #60A5FA, #3B82F6);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    opacity: 1;
+    transform-style: preserve-3d;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .presentacion p {
-    font-size: 32px;
-    line-height: 1.2;
-    font-weight:600;
+  font-size: 1.368rem;
+  line-height: 2.25rem;
+    font-weight:400;
 }
 .presentacion .redes {
     display: flex;
@@ -52,15 +61,13 @@
 }
 
 .foto{
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
-    justify-content: end;
+    align-items: center;
 }
 .foto img {
-    height: 100%;
-    clip-path: circle(50% at 50% 50%);
-    overflow: hidden;
+    width: 100%;
 }
 
 
@@ -95,6 +102,7 @@
     width: 0px;
     overflow: hidden;
     transition: 0.3s;
+    font-size: 1.4rem;
     text-align: center;
     margin-left: 5px;
   }
@@ -122,33 +130,26 @@
   }
 
   
-@media screen and (max-width: 700px) { 
+@media screen and (max-width: 930px) { 
+  .portada {
+    padding-top: 70px;
+  }
+    .contain-portada {
+        flex-direction: column;
+        gap: 64px;
+    }
     .presentacion {
         width: 100%;
-        padding: 12px;
-        height: auto;
-    }
-    .portada {
-        width: 100%;
-        flex-direction: column;
-    }
-    .presentacion h1 {
-        font-size: 24px;
     }
     .presentacion p {
-        font-size: 16px;
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+    .presentacion h1 {
+      font-size: 3rem;
+      line-height: 1;
     }
     .foto {
-        width: 100%; 
-        height: auto;
-        justify-content: end;
-    }
-    .foto img{
-        position: static;
-        right: 0;
-        width: 300px;
-    }
-    .aboutme img {
-        border-radius: 10px;
+      width: 50%;
     }
 }
