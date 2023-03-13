@@ -1,111 +1,56 @@
 #footer {
     width: 100%;
-    padding: 64px 24px;
+    padding: 56px 0;
     display: flex;
     gap: 16px 64px;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    background: linear-gradient(to bottom, #fff, #e0efff);
 }
-#footer div:nth-child(n){
-    height: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contain-footer {
+  width: 100%;
+  max-width: 1112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
 }
-
-.btn-footer {
-    height: 65px;
-    width: 200px;
-    border: none;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    background-color: #fff;
-  }
-  
-  .btn-footer span {
-    z-index: 1;
-    background-image: linear-gradient(90deg,#c2fbe6,#4eedb1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65px;
-    width: 200px;
-    border-radius: 15px;
-    -webkit-transition: all 0.5s;
-    color: black;
-    overflow: hidden;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 3px;
-    transition: all 0.5s;
-  }
-  
-  .btn-footer .container-btn {
-    z-index: -1;
-    width: 0px;
-    scale: 0;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    right: 0;
-    transition: all 0.4s;
-  }
-  
-  .btn-footer .container-btn svg {
-    padding: 0 10px;
-  }
-  .container-btn a{
-    transition: all .5s ease;
-    height: 80px;
-    display: grid;
-    place-content: center;
-  }
-  
-  .btn-footer:hover span {
-    width: 0;
-  }
-  .btn-footer .container-btn a:hover {
-    transform: translateY(-6px);
-  }
-  
-  .btn-footer:hover .container-btn {
-    z-index: 2;
-    scale: 1;
-    width: 100%;
-  }
-
+.links-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.contain-footer .links-footer a {
+  text-decoration: none;
+  width: 39px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease;
+}
+.links-footer svg {
+  width: 39px;
+  height: 39px;
+}
+.links-footer a:hover {
+  transform: translateY(-6px);
+}
+.links-footer a:active {
+  transform: scale(0.8);
+}
   .footer-design h1{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
+    color: #93C5FD;
   }
 
-  .footer-bg {
-    gap: 8px;
-  }
-  .footer-bg h1{
-    color:#039be5;
-    font-size: 48px; 
-    font-weight: bolder;
-  }
-  .footer-bg h2{
-    color:#000000;
-    font-size: 48px; 
-    font-weight: bolder;
-  }
 
   @media screen and (max-width: 1050px) {
-    .footer-bg h1{
-        font-size: 36px; 
+    .contain-footer {
+      flex-direction: column;
 
-      }
-    .footer-bg h2 {
-      font-size: 36px;
     }
   }
   

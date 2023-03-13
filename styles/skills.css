@@ -11,14 +11,14 @@
 }
 .contain-skills {
     box-sizing: border-box;
-    width: 80%;
-/*     max-width: 1112px; */
+    width: 100%;
+    max-width: 1112px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     height: auto;
     justify-content: center;
-    gap: 32px;
+    gap: 28px;
     flex: none;
 order: 0;
 flex-grow: 0;

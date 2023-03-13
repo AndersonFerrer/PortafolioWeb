@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./assets/perfil.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles/aboutme.css">
@@ -34,15 +34,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
                     <h1>Anderson Ferrer</h1>
                 </div>
                 <div class="btn-menu">
-                    <button id="btn-menu" class="btn">
-                        <span class="icon">
-                            <svg viewBox="0 0 175 80" width="40" height="40">
-                                <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                                <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                                <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                            </svg>
-                        </span>
-                        <span class="text">MENU</span>
+                    <button onclick="btnMenu()" id="btn-menu" class="btn">
+                        <div id="bars1">ㅤ</div>
+                        <div id="bars2">ㅤ</div>
+                        <div id="bars3">ㅤ</div>
+                        
                     </button>
                 </div>
                 <div id="header-nav" class="header-nav">
@@ -71,19 +67,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
                 <div class="presentacion">
                     <h1>Hola, soy Anderson: Programador <br> Front-End.</h1>
                     <p>Soy formado en la Universidad Tecnológica del Perú y actualmente estoy participando del proyecto Oracle ONE en Alura Latam</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/andersonferrer.28" target="_blank" id="twitter" class="social-btn flex-center">
-                            <i class="fa-brands fa-facebook" style="font-size: 39px; color: #039be5;"></i><span>Facebook</span>
-                        </a >
+                    <div class="follow">
+                        <span>Sígueme</span>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/andersonferrer.28" target="_blank" id="twitter" class="social-btn flex-center">
+                                <i class="fa-brands fa-facebook" style="font-size: 39px; color: #039be5;"></i>
+                            </a >
+                        
+                            <a href="https://www.linkedin.com/in/anderson-ferrer/" target="_blank" id="linkedin" class="social-btn flex-center">
+                                <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path></svg>
+                            </a >
                     
-                        <a href="https://www.linkedin.com/in/anderson-ferrer/" target="_blank" id="linkedin" class="social-btn flex-center">
-                            <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path></svg><span>Linkedin</span>
+                            <a href="https://github.com/AndersonFerrer" target="_blank" id="github" class="social-btn flex-center">
+                                <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
                         </a >
-                
-                        <a href="https://github.com/AndersonFerrer" target="_blank" id="github" class="social-btn flex-center">
-                            <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg><span>GitHub</span>
-                    </a >
-                </div>
+                    </div>
+                    </div>
+                    
                 </div>
                 <div class="foto">
                     <img src="./assets/perfilweb.png" alt="perfil">
@@ -167,10 +167,6 @@ también en la gestión de proyectos, mucho trabajo en equipo y solución de pro
                     <div class="skill-text"><h1>Viajar</h1></div>
                 </div>
                 <div class="card-skill">
-                    <div class="skill"><i class="fa-solid fa-person-walking"></i></div>
-                    <div class="skill-text"><h1>Caminar</h1></div>
-                </div>
-                <div class="card-skill">
                     <div class="skill"><i class="fa-solid fa-gamepad"></i></div>
                     <div class="skill-text"><h1>Videojuegos</h1></div>
                 </div>
@@ -208,7 +204,7 @@ también en la gestión de proyectos, mucho trabajo en equipo y solución de pro
                 </div>
                 <div class="card-education">
                     <div class="academic-bg">
-                        <img style="object-fit: cover;" src="./assets/utp.png" alt="utp">
+                        <img style="object-fit: cover; width: 280px;" src="./assets/utp.png" alt="utp">
                     </div>
                     <div class="text-education">
                         <h1>Ingenieria de Sistemas e Informática</h1>
@@ -331,41 +327,25 @@ también en la gestión de proyectos, mucho trabajo en equipo y solución de pro
             </div>
         </div>
         <div id="footer">
-
-                <div class="footer-bg">
-                    <h1>Anderson</h1>
-                    <h2>Ferrer</h2>
-                </div>
+            <div class="contain-footer">
                 <div class="footer-design">
                     <h1>Desarrollado por Anderson Ferrer © 2023</h1>
                 </div>
                 <div class="links-footer">
-                    <button class="btn-footer">
-                        <span>Sígueme</span>
-                        <div class="container-btn">
-                            <a href="https://www.facebook.com/andersonferrer.28" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="70" height="70"
-viewBox="0 0 48 48">
-<path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
-</svg>
-                            </a>
-                            
-                            <a href="https://www.linkedin.com/in/anderson-ferrer/" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="65" height="65"
-viewBox="0 0 50 50">
-    <path fill="#0e76a8" d="M 8 3.0097656 C 4.53 3.0097656 2.0097656 5.0892187 2.0097656 7.9492188 C 2.0097656 10.819219 4.59 12.990234 8 12.990234 C 11.47 12.990234 13.990234 10.870625 13.990234 7.890625 C 13.830234 5.020625 11.36 3.0097656 8 3.0097656 z M 3 15 C 2.45 15 2 15.45 2 16 L 2 45 C 2 45.55 2.45 46 3 46 L 13 46 C 13.55 46 14 45.55 14 45 L 14 16 C 14 15.45 13.55 15 13 15 L 3 15 z M 18 15 C 17.45 15 17 15.45 17 16 L 17 45 C 17 45.55 17.45 46 18 46 L 27 46 C 27.552 46 28 45.552 28 45 L 28 30 L 28 29.75 L 28 29.5 C 28 27.13 29.820625 25.199531 32.140625 25.019531 C 32.260625 24.999531 32.38 25 32.5 25 C 32.62 25 32.739375 24.999531 32.859375 25.019531 C 35.179375 25.199531 37 27.13 37 29.5 L 37 45 C 37 45.552 37.448 46 38 46 L 47 46 C 47.55 46 48 45.55 48 45 L 48 28 C 48 21.53 44.529063 15 36.789062 15 C 33.269062 15 30.61 16.360234 29 17.490234 L 29 16 C 29 15.45 28.55 15 28 15 L 18 15 z"></path>
-</svg>
-                            </a>
-                            <a href="https://github.com/AndersonFerrer" target="_blank">
-                                <svg height="65" width="65" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
-                                    <path fill="#333" d="M950.930286 512q0 143.433143-83.748571 257.974857t-216.283429 158.573714q-15.433143 2.852571-22.601143-4.022857t-7.168-17.115429l0-120.539429q0-55.442286-29.696-81.115429 32.548571-3.437714 58.587429-10.313143t53.686857-22.308571 46.299429-38.034286 30.281143-59.977143 11.702857-86.016q0-69.12-45.129143-117.686857 21.138286-52.004571-4.534857-116.589714-16.018286-5.12-46.299429 6.290286t-52.589714 25.161143l-21.723429 13.677714q-53.174857-14.848-109.714286-14.848t-109.714286 14.848q-9.142857-6.290286-24.283429-15.433143t-47.689143-22.016-49.152-7.68q-25.161143 64.585143-4.022857 116.589714-45.129143 48.566857-45.129143 117.686857 0 48.566857 11.702857 85.723429t29.988571 59.977143 46.006857 38.253714 53.686857 22.308571 58.587429 10.313143q-22.820571 20.553143-28.013714 58.88-11.995429 5.705143-25.746286 8.557714t-32.548571 2.852571-37.449143-12.288-31.744-35.693714q-10.825143-18.285714-27.721143-29.696t-28.306286-13.677714l-11.410286-1.682286q-11.995429 0-16.603429 2.56t-2.852571 6.582857 5.12 7.972571 7.460571 6.875429l4.022857 2.852571q12.580571 5.705143 24.868571 21.723429t17.993143 29.110857l5.705143 13.165714q7.460571 21.723429 25.161143 35.108571t38.253714 17.115429 39.716571 4.022857 31.744-1.974857l13.165714-2.267429q0 21.723429 0.292571 50.834286t0.292571 30.866286q0 10.313143-7.460571 17.115429t-22.820571 4.022857q-132.534857-44.032-216.283429-158.573714t-83.748571-257.974857q0-119.442286 58.88-220.306286t159.744-159.744 220.306286-58.88 220.306286 58.88 159.744 159.744 58.88 220.306286z"></path>
-                                </svg>
-                            </a>       
-                        </div>
-                    </button> 
+                    <a href="https://www.facebook.com/andersonferrer.28" target="_blank" id="twitter" >
+                        <i class="fa-brands fa-facebook" style="font-size: 39px; color: #039be5;"></i>
+                    </a >
+                
+                    <a href="https://www.linkedin.com/in/anderson-ferrer/" target="_blank" id="linkedin" >
+                        <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path></svg>
+                    </a >
+            
+                    <a href="https://github.com/AndersonFerrer" target="_blank" id="github" >
+                        <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+                </a >  
                 </div>   
+            </div>
+
 
         </div>
     </div>

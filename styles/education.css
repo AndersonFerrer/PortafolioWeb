@@ -1,16 +1,16 @@
 .contain-education {
     display: flex;
     width: 100%;
-/*     max-width: 1112px; */
+    max-width: 1112px;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 16px;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
 }
 .card-education {
     width: 360px;
-    height: 260px;
+    height: 270px;
     border-radius: 15px;
     background-image:linear-gradient(to right, #93C5FD, #60A5FA, #3B82F6);
     padding: 12px;
@@ -51,7 +51,7 @@
     box-sizing: border-box;
 
     align-items: start;
-    height: 74px;
+    height: 84px;
     width: 100%;
     gap: 6px;
     justify-content: center;
@@ -60,5 +60,8 @@
     text-align: start;
     font-size: 20px;
     font-weight: 600;
+}
+.text-education p {
+    line-height: 1;
 }
 

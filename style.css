@@ -25,7 +25,7 @@ div[id] {
     min-height: 100vh;
     font-family: 'Sora',Arial,sans-serif;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.8);
+    background: #ffffffda;
     line-height: 1.75rem;
     position: relative;
 }
