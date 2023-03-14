@@ -282,7 +282,7 @@ también en la gestión de proyectos, mucho trabajo en equipo y solución de pro
                     </div>
                     <div>
                         <i class="fa-solid fa-envelope"></i>
-                        <p>ferrer.280104@gmail.com</p>
+                        <p><span>ferrer.280104</span><span>@gmail.com</span></p>
                     </div>
                     <div>
                         <i class="fa-solid fa-location-dot"></i>
@@ -294,34 +294,26 @@ también en la gestión de proyectos, mucho trabajo en equipo y solución de pro
                         <div>
                             <label id="1" for="name">
                                 Nombre </label>
-                            <input  id="name1" onblur="blurLabel(1, name1)" onfocus="focusLabel(1)" required type="text" name="name" >
+                            <input  id="name1" required onblur="blurLabel(1, name1)" onfocus="focusLabel(1)" type="text" name="name" >
                         </div>
                         <div>
-                            <label id="2" for="name">Email</label>
-                            <input id="email" onblur="blurLabel(2, email)" onfocus="focusLabel(2)" required type="email" name="email" >
+                            <label id="2" for="email">Email</label>
+                            <input id="email" required onblur="blurLabel(2, email)" onfocus="focusLabel(2)" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" type="email" name="email" >
                         </div>
                     </div>
                     <div>
                         <label id="3" for="subject">Asunto</label>
-                        <input id="subject" onblur="blurLabel(3, subject)" onfocus="focusLabel(3)"  required type="text" name="subject">
+                        <input id="subject" required onblur="blurLabel(3, subject)" onfocus="focusLabel(3)" type="text" name="subject">
                     </div>
                     <div>
                         <label id="4" for="message">Mensaje</label>
-                        <textarea id='message' onblur="blurLabel(4, message)" onfocus="focusLabel(4)"  style="resize: none;" required name="message" id="message" maxlength="600"  rows="8"></textarea>
+                        <textarea id='message' required onblur="blurLabel(4, message)" onfocus="focusLabel(4)"  style="resize: none;" name="message" id="message" maxlength="600"  rows="8"></textarea>
                     </div>
                     <input id="submit-form" type="submit" value="Enviar">
-
-
-
 
                    <!--  <input type="hidden" name="_next" value="false"> -->
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
-
-
-
-
-
 
                 </form>
             </div>

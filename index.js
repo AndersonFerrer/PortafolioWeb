@@ -4,11 +4,30 @@ function focusLabel(elemId) {
   }
 
 function blurLabel(elemId, elem) {
-  if (elem.value !== ''){
+
+  if (elem === email) {
+
+    const color = document.getElementById(elemId);
+    let expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+    let emailValid = expReg.test(elem.value);
+    console.log(elem.value , emailValid)
+    if(emailValid == true) {
+      color.style.color = '#60A5FA'
+    }
+     else {
+      color.style.color = '#0000007c'
+    }
+
+  }
+
+
+  if (elem !== email && elem.value !== ''){
       const color = document.getElementById(elemId);
-       color.style.color = '#60A5FA'
-   } else {
+      color.style.color = '#60A5FA'
+   } 
+   else if (elem !== email){
       const color = document.getElementById(elemId)
+      console.log('gaa')
       color.style.color = '#0000007c'
    }
     

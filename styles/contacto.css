@@ -70,7 +70,9 @@
 }
 .contac-info p {
     font-size: 20px;
-    z-index: 10
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
 }
 .contac-info i {
     color: white;
@@ -116,7 +118,13 @@
 input:focus{
     border-bottom: 3px solid #60A5FA;
 }
-input:valid {
+input:valid{
+    border-bottom: 3px solid #60A5FA;
+}
+textarea:focus {
+    border-bottom: 3px solid #60A5FA;
+}
+textarea:valid {
     border-bottom: 3px solid #60A5FA;
 }
 .contac-form label{
@@ -133,13 +141,7 @@ textarea {
     outline: none;
     border-bottom: 3px solid rgba(128, 128, 128, 0.5);
 }
-textarea:focus {
-    border-bottom: 3px solid #60A5FA;
-}
 
-textarea:valid {
-    border-bottom: 3px solid #60A5FA;
-}
 #submit-form {
     display: block;
     border: none;
