@@ -25,9 +25,10 @@ div[id] {
     min-height: 100vh;
     font-family: 'Sora',Arial,sans-serif;
     box-sizing: border-box;
-    background: #ffffffda;
+    background: var(--bg-ligth-mode);
     line-height: 1.75rem;
     position: relative;
+    transition: all .5s ;
 }
 * {
     -webkit-box-sizing: border-box;
@@ -35,5 +36,16 @@ div[id] {
     box-sizing: border-box;
     font-family: 'Sora',Arial,sans-serif;
     scroll-behavior: smooth;
+    transition: all .5s ;
+}
+:root {
+    --ligth-mode : white;
+    --dark-mode : #212121;
+    --bg-ligth-mode : #ffffffda;
+    --bg-dark-mode : #212121da;
+    --portada-ligth : url('https://uploads-ssl.webflow.com/5d362331b9f50fdd0566cb47/6103f279ce95235370867751_bg-pattern.svg');
+    --portada-dark : url(../assets/bg-portada-dark.png);
+    --label-ligth : #0000007c;
+    --label-dark : rgba(128, 128, 128, 0.5);
 }
 

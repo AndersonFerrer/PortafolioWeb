@@ -1,8 +1,7 @@
 /* °°°°°°°°°°°°°°°°°°°°°°°° // SECCION DE PORTADA // °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
 
 .portada {
-  background-color: #fff;
-  background-image: url(https://uploads-ssl.webflow.com/5d362331b9f50fdd0566cb47/6103f279ce95235370867751_bg-pattern.svg);
+  background-image: var(--portada-ligth);
   background-position: 50% 0px;
   padding: 0px 24px;
   padding-top: 130px;
@@ -53,6 +52,7 @@
 .presentacion p {
   font-size: 1.368rem;
   line-height: 2.25rem;
+  color: var(--dark-mode);
     font-weight:400;
 }
 .presentacion .redes {
@@ -71,7 +71,6 @@
 }
 
 .follow {
-  background-color: white;
   font-size: 1.368rem;
   position: relative;
   display: flex;
@@ -131,7 +130,7 @@
   }
   
   #github {
-    fill: #333;
+    fill: black;
   }
 
   

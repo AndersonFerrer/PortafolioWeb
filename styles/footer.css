@@ -5,7 +5,7 @@
     gap: 16px 64px;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #fff, #e0efff);
+    background: linear-gradient(to bottom, var((--ligth-mode)), #e0efff);
 }
 .contain-footer {
   width: 100%;
@@ -14,6 +14,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+  position: relative;
 }
 .links-footer {
   display: flex;
@@ -46,8 +47,12 @@
     text-align: center;
     color: #93C5FD;
   }
-
-
+.links-footer a:first-child {
+  background-image:linear-gradient(to right, #93C5FD, #60A5FA, #3B82F6);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
   @media screen and (max-width: 1050px) {
     .contain-footer {
       flex-direction: column;

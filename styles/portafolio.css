@@ -12,6 +12,7 @@
     align-items: center;
     box-sizing: border-box;
     padding: 64px 24px;
+    color: var(--dark-mode);
 }
 #reverse {
     flex-direction: row-reverse;

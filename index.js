@@ -15,7 +15,7 @@ function blurLabel(elemId, elem) {
       color.style.color = '#60A5FA'
     }
      else {
-      color.style.color = '#0000007c'
+      color.style.color = 'var(--label-ligth)'
     }
 
   }
@@ -27,13 +27,12 @@ function blurLabel(elemId, elem) {
    } 
    else if (elem !== email){
       const color = document.getElementById(elemId)
-      console.log('gaa')
-      color.style.color = '#0000007c'
+      color.style.color = 'var(--label-ligth)'
    }
     
  }
 
-var visible = false;
+let visible = false;
 const headerNav = document.getElementById('header-nav');
 const blackMenu = document.getElementById('black-menu');
 const bar1 = document.getElementById('bars1');
@@ -58,16 +57,46 @@ function ocultarMenu() {
 
 function btnMenu() {
   if(visible == false) {
-    console.log(visible)
     mostrarMenu();
     visible = !visible
   } else if (visible == true) {
-    console.log(visible)
     ocultarMenu()
     
   }
 }
+let darkModeIs = false;
+function darkMode() {
+  console.log('clickkk')
+  if(darkModeIs === true) {
+    darkModeIs = !darkModeIs
+    visible = !visible
+    document.documentElement.style.setProperty('--ligth-mode', 'white')
+    document.documentElement.style.setProperty('--dark-mode', '#212121')
+    document.documentElement.style.setProperty('--bg-ligth-mode', '#ffffffda')
+    document.documentElement.style.setProperty('--bg-dark-mode', '#212121da')
+    document.documentElement.style.setProperty('--portada-dark', '#212121')
+    document.documentElement.style.setProperty('--portada-ligth', 'url(../assets/bg-portada.svg)')
+    document.documentElement.style.setProperty('--label-ligth', '#0000007c')
+    document.documentElement.style.setProperty('--label-dark', 'rgba(128, 128, 128, 0.5)#0000007c')
+    document.getElementById('henry').src = './assets/henryB.png'
+    document.getElementById('alura').src = './assets/alura.png'
+  } else {
+    visible = !visible
+    darkModeIs = !darkModeIs
+    document.documentElement.style.setProperty('--ligth-mode', '#212121')
+    document.documentElement.style.setProperty('--dark-mode', 'white')
+    document.documentElement.style.setProperty('--bg-dark-mode', '#ffffffda')
+    document.documentElement.style.setProperty('--bg-ligth-mode', '#212121da')
+    document.documentElement.style.setProperty('--portada-dark', 'url(../assets/bg-portada.svg)')
+    document.documentElement.style.setProperty('--portada-ligth', '#212121')
+    document.documentElement.style.setProperty('--label-ligth', 'rgba(128, 128, 128, 0.5)')
+    document.documentElement.style.setProperty('--label-dark', '#0000007c')
+    document.getElementById('henry').src = './assets/henry.png'
+    document.getElementById('alura').src = './assets/aluraW.png'
+  }
 
+}
+document.getElementById('switch-dark').addEventListener('click', darkMode);
 document.getElementById('black-menu').addEventListener('click', ocultarMenu);
 document.getElementById('header-nav').addEventListener('click', ocultarMenu)
 
