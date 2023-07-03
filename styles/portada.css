@@ -119,18 +119,29 @@
 .social-links a:focus {
   transform: scale(0.9);
 }
-
+.social-links a:nth-child(2) {
+  background-color: #3B82F6;
+  padding: 8px;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
   
   #twitter svg {
     fill: #1da1f2;
   }
   
   #linkedin svg {
-    fill: #0e76a8;
+    fill: white;
+    background-color: transparent;
   }
   
   #github {
     fill: black;
+    background-color: white;
+    border-radius: 60%;
+    padding: px;
   }
 
   

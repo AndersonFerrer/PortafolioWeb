@@ -38,7 +38,6 @@ const blackMenu = document.getElementById('black-menu');
 const bar1 = document.getElementById('bars1');
 const bar2 = document.getElementById('bars2');
 const bar3 = document.getElementById('bars3');
-
 function mostrarMenu() {
   headerNav.style.right = '0px';
   blackMenu.style.display = 'flex';
@@ -96,7 +95,12 @@ function darkMode() {
   }
 
 }
+
 document.getElementById('switch-dark').addEventListener('click', darkMode);
 document.getElementById('black-menu').addEventListener('click', ocultarMenu);
 document.getElementById('header-nav').addEventListener('click', ocultarMenu)
+window.addEventListener('resize', esconder)
+function esconder() {
+  blackMenu.style.display = 'none'
+}
 

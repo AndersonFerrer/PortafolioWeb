@@ -107,6 +107,7 @@
     min-height: 100%;
     z-index: 6;
     top: 0;
+    overflow: hidden;
     background: rgba(0, 0, 0, 0.418);
   }
 
