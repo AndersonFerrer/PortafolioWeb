@@ -115,8 +115,8 @@
 .action-exp img {
     border-radius: 10px 10px 0px 0px;
     width: 630px;
-    height: 370px;
-    object-fit: fill;
+    aspect-ratio: 1.7027027;
+    object-fit: cover;
     max-width: 100%;
     overflow-clip-margin: content-box;
     overflow: clip;
