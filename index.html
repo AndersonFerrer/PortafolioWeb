@@ -1,428 +1,694 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./styles/aboutme.css">
-    <link rel="stylesheet" href="./styles/contacto.css">
-    <link rel="stylesheet" href="./styles/education.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/portada.css">
-    <link rel="stylesheet" href="./styles/portafolio.css">
-    <link rel="stylesheet" href="./styles/skills.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles/aboutme.css" />
+    <link rel="stylesheet" href="./styles/contacto.css" />
+    <link rel="stylesheet" href="./styles/education.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/portada.css" />
+    <link rel="stylesheet" href="./styles/portafolio.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <title>Anderson Ferrer</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div id="black-menu">
-            ㅤ
+      <div id="black-menu">ㅤ</div>
+      <header class="header">
+        <div class="contain-header">
+          <div class="header-bg">
+            <h1>Anderson Ferrer</h1>
+          </div>
+          <div class="btn-menu">
+            <button onclick="btnMenu()" id="btn-menu" class="btn">
+              <div id="bars1">ㅤ</div>
+              <div id="bars2">ㅤ</div>
+              <div id="bars3">ㅤ</div>
+            </button>
+          </div>
+          <div id="header-nav" class="header-nav">
+            <label class="switch">
+              <span class="sun"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g fill="#ffd43b">
+                    <circle r="5" cy="12" cx="12"></circle>
+                    <path
+                      d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"
+                    ></path>
+                  </g></svg
+              ></span>
+              <span class="moon"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path
+                    d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+                  ></path></svg
+              ></span>
+              <input id="switch-dark" type="checkbox" class="input" />
+              <span class="slider"></span>
+            </label>
+            <nav>
+              <ul>
+                <a href="#portada" class="navlink">Inicio</a>
+                <a href="#about" class="navlink">Sobre mí</a>
+                <a href="#proyects" class="navlink">Portafolio</a>
+                <a href="#form" class="navlink">Contacto</a>
+              </ul>
+            </nav>
+            <a
+              href="./assets/AndersonFerrer-CV.pdf"
+              target="_blank"
+              class="btn-pdf"
+            >
+              <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                  <i class="fa-regular fa-file-lines"></i>
+                </div>
+              </div>
+              <span>CV</span>
+            </a>
+          </div>
         </div>
-        <header class="header">
-            <div class="contain-header">
-                <div class="header-bg">
-                    <h1>Anderson Ferrer</h1>
-                </div>
-                <div class="btn-menu">
-                    <button onclick="btnMenu()" id="btn-menu" class="btn">
-                        <div id="bars1">ㅤ</div>
-                        <div id="bars2">ㅤ</div>
-                        <div id="bars3">ㅤ</div>
+      </header>
+      <div id="portada" class="portada">
+        <div class="contain-portada">
+          <div class="presentacion">
+            <h1>
+              Hola, soy Anderson: Programador <br />
+              Front-End.
+            </h1>
+            <p>
+              Estoy siendo formado en la Universidad Tecnológica del Perú y
+              actualmente estoy practicando en la empresa Kromee, desarrollando
+              proyectos reales.
+            </p>
+            <div class="follow">
+              <span>Sígueme</span>
+              <div class="social-links">
+                <a
+                  href="https://www.facebook.com/andersonferrer.28"
+                  target="_blank"
+                  id="twitter"
+                  class="social-btn flex-center"
+                >
+                  <i
+                    class="fa-brands fa-facebook"
+                    style="font-size: 39px; color: #039be5"
+                  ></i>
+                </a>
 
-                    </button>
-                </div>
-                <div id="header-nav" class="header-nav">
-                    <label class="switch">
-                        <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <g fill="#ffd43b">
-                                    <circle r="5" cy="12" cx="12"></circle>
-                                    <path
-                                        d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
-                                    </path>
-                                </g>
-                            </svg></span>
-                        <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path
-                                    d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
-                                </path>
-                            </svg></span>
-                        <input id="switch-dark" type="checkbox" class="input">
-                        <span class="slider"></span>
-                    </label>
-                    <nav>
-                        <ul>
-                            <a href="#portada" class="navlink">Inicio</a>
-                            <a href="#about" class="navlink">Sobre mí</a>
-                            <a href="#proyects" class="navlink">Portafolio</a>
-                            <a href="#form" class="navlink">Contacto</a>
-                        </ul>
-                    </nav>
-                    <a href="./assets/AndersonFerrer-CV.pdf" target="_blank" class="btn-pdf">
-                        <div class="svg-wrapper-1">
-                            <div class="svg-wrapper">
-                                <i class="fa-regular fa-file-lines"></i>
-                            </div>
-                        </div>
-                        <span>CV</span>
-                    </a>
-                </div>
+                <a
+                  href="https://www.linkedin.com/in/anderson-ferrer/"
+                  target="_blank"
+                  id="linkedin"
+                  class="social-btn flex-center"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    height="24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                    ></path>
+                  </svg>
+                </a>
+
+                <a
+                  href="https://github.com/AndersonFerrer"
+                  target="_blank"
+                  id="github"
+                  class="social-btn flex-center"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    height="24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-
-        </header>
-        <div id="portada" class="portada">
-            <div class="contain-portada">
-                <div class="presentacion">
-                    <h1>Hola, soy Anderson: Programador <br> Front-End.</h1>
-                    <p>Estoy siendo formado en la Universidad Tecnológica del Perú y actualmente estoy practicando en la empresa Kromee, desarrollando proyectos reales.</p>
-                    <div class="follow">
-                        <span>Sígueme</span>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/andersonferrer.28" target="_blank" id="twitter"
-                                class="social-btn flex-center">
-                                <i class="fa-brands fa-facebook" style="font-size: 39px; color: #039be5;"></i>
-                            </a>
-
-                            <a href="https://www.linkedin.com/in/anderson-ferrer/" target="_blank" id="linkedin"
-                                class="social-btn flex-center">
-                                <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z">
-                                    </path>
-                                </svg>
-                            </a>
-
-                            <a href="https://github.com/AndersonFerrer" target="_blank" id="github"
-                                class="social-btn flex-center">
-                                <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="foto">
-                    <img src="./assets/perfilweb.png" alt="perfil">
-                </div>
-            </div>
+          </div>
+          <div class="foto">
+            <img src="./assets/perfilweb.png" alt="perfil" />
+          </div>
         </div>
-        <div class="about" id="about">
-            <h1>Sobre mí</h1>
-            <div class="aboutme">
-                <div class="bg-about">
-                    <img src="./assets/aboutbg.png" alt="bgabout">
+      </div>
+      <div class="about" id="about">
+        <h1>Sobre mí</h1>
+        <div class="aboutme">
+          <div class="bg-about">
+            <img src="./assets/aboutbg.png" alt="bgabout" />
+          </div>
+          <div class="desc-about">
+            <p>
+              Soy un entusiasta por el mundo de la programacion y tecnología
+              desde el 2021, actualmente me encuentro practicando en la empresa
+              Kromee con proyectos reales. Tengo mayor experiencia en la parte
+              visual de las aplicaciones (Front-End), cuento con la capicidad de
+              adaptacion a nuevos equipos y tecnologias nuevas, puestas a prueba
+              en las diferentes simulaciones de trabajo.
+            </p>
+            <a
+              href="./assets/AndersonFerrer-CV.pdf"
+              target="_blank"
+              class="btn-pdf"
+            >
+              <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                  <i class="fa-regular fa-file-lines"></i>
                 </div>
-                <div class="desc-about">
-                    <p>Soy un entusiasta por el mundo de la programacion y tecnología desde el 2021, actualmente me encuentro practicando en la empresa Kromee con proyectos reales. Tengo mayor experiencia en la parte visual de las aplicaciones (Front-End), cuento con la capicidad de adaptacion a nuevos equipos y tecnologias nuevas, puestas a prueba en las diferentes simulaciones de trabajo.</p>
-                    <a href="./assets/AndersonFerrer-CV.pdf" target="_blank" class="btn-pdf">
-                        <div class="svg-wrapper-1">
-                            <div class="svg-wrapper">
-                                <i class="fa-regular fa-file-lines"></i>
-                            </div>
-                        </div>
-                        <span>Curriculum</span>
-                    </a>
-                </div>
-            </div>
-            <h1>Tecnologías y herramientas</h1>
-            <div class="contain-skills">
-
-                <div class="card-skill">
-                    <div class="skill"><img width="70px" src="./assets/html.svg" alt="html"></div>
-                    <div class="skill-text">
-                        <h1>HTML5</h1>
-                    </div>
-                </div>
-                <div class="card-skill">
-                    <div class="skill"><img width="70px" src="./assets/css.svg" alt="css"></div>
-                    <div class="skill-text">
-                        <h1>CSS</h1>
-                    </div>
-                </div>
-                <div class="card-skill">
-                    <div class="skill"><img width="70px" src="assets/javascript.svg" alt="javascript"></div>
-                    <div class="skill-text">
-                        <h1>Javascript</h1>
-                    </div>
-                </div>
-                <div class="card-skill">
-                    <div class="skill"><i class="fa-brands fa-react"></i></div>
-                    <div class="skill-text">
-                        <h1>React</h1>
-                    </div>
-                </div>
-                <div class="card-skill">
-                    <div class="skill"><img width="100px" src="./assets/tailwind.png" alt="tailwind"></div>
-                    <div class="skill-text">
-                        <h1>Tailwind</h1>
-                    </div>
-                </div>
-                <div class="card-skill">
-                    <div class="skill"><img width="60px" src="./assets/flutter.png" alt="flutter"></div>
-                    <div class="skill-text">
-                        <h1>Flutter</h1>
-                    </div>
-                </div>
-                <div class="card-skill">
-                    <div class="skill"><img width="70px" src="./assets/git.png" alt="git"></div>
-                    <div class="skill-text">
-                        <h1>Git</h1>
-                    </div>
-                </div>
-                <div class="card-skill">
-                    <div class="skill"><img width="70px" src="./assets/nodejs.png" alt="git"></div>
-                    <div class="skill-text">
-                        <h1>NodeJs</h1>
-                    </div>
-                </div>
-                <div class="card-skill">
-                    <div class="skill"><img width="70px" src="./assets/ts.png" alt="github"></div>
-                    <div class="skill-text">
-                        <h1>TypeScript</h1>
-                    </div>
-                </div>
-                <div class="card-skill">
-                    <div class="skill"><img width="70px" src="./assets/gitlab.png" alt="github"></div>
-                    <div class="skill-text">
-                        <h1>GitLab</h1>
-                    </div>
-                </div>
-                <div class="card-skill">
-                    <div class="skill"><img width="70px" src="./assets/scrum.png" alt="github"></div>
-                    <div class="skill-text">
-                        <h1>Scrum</h1>
-                    </div>
-                </div>
-                <div class="card-skill">
-                    <div class="skill"><img width="70px" src="./assets/trello.png" alt="git"></div>
-                    <div class="skill-text">
-                        <h1>Trello</h1>
-                    </div>
-                </div>
-                <div class="card-skill">
-                    <div class="skill"><img width="70px" src="./assets/express.png" alt="github"></div>
-                    <div class="skill-text">
-                        <h1>ExpressJS</h1>
-                    </div>
-                </div>
-                <div class="card-skill">
-                    <div class="skill"><img width="70px" src="./assets/mongo.png" alt="github"></div>
-                    <div class="skill-text">
-                        <h1>MongoDB</h1>
-                    </div>
-                </div>
-
-            </div>
-
-            <h1>Formación Académica</h1>
-            <div class="contain-education">
-                <div class="card-education">
-                    <div class="academic-bg">
-                        <img id="henry" src="./assets/henryB.png" alt="henry">
-                    </div>
-                    <div class="text-education">
-                        <h1>Programacion Web Frontend</h1>
-                        <p>2022 - SoyHenry</p>
-                    </div>
-                </div>
-                <div class="card-education">
-                    <div class="academic-bg">
-                        <img src="./assets/certus.png" alt="certus">
-                    </div>
-                    <div class="text-education">
-                        <h1>Desarrollador Móvil con Flutter</h1>
-                        <p>2023 - CERTUS</p>
-                    </div>
-                </div>
-                <div class="card-education">
-                    <div class="academic-bg">
-                        <img id="alura" src="./assets/alura.png" alt="alura">
-                    </div>
-                    <div class="text-education">
-                        <h1>Programación Web Frontend</h1>
-                        <p>2023 - Oracle ONE</p>
-                    </div>
-
-                </div>
-                <div class="card-education">
-                    <div class="academic-bg">
-                        <img style="object-fit: cover; width: 280px;" src="./assets/utp.png" alt="utp">
-                    </div>
-                    <div class="text-education">
-                        <h1>Ingenieria de Sistemas e Informática</h1>
-                        <p>En curso - UTP</p>
-                    </div>
-                </div>
-            </div>
+              </div>
+              <span>Curriculum</span>
+            </a>
+          </div>
         </div>
-        <div class="proyects" id="proyects">
-            <h1>Experiencia Personal</h1>
-            <div class="contain-exp">
-                <div class="exp-card">
-                    <div class="desc-exp">
-                        <div class="text-desc">
-                            <h1>flickSpot</h1>
-                            <p>Aplicación para búsqueda de películas hecha con ReactJs y TailwindCSS, consumiendo la api
-                                de TMDB (En producción).
-                            </p>
-                            <div>
-                                <a href='https://github.com/AndersonFerrer/FlickSpot' class="btn-view" target="_blank">
-                                    Codigo
-                                </a>
-                                <a href='https://flickspot-web.netlify.app/' class="btn-view" target="_blank"> Demo
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="action-exp"><img src="./assets/flickspot.jpg" alt="flickspot"></div>
-                </div>
-                <div class="exp-card" id="reverse">
-                    <div class="desc-exp">
-                        <div class="text-desc">
-                            <h1>Weather App V2</h1>
-                            <p>Aplicación para obtener información del clima mediante la busqueda de una ciudad o localizada mediante su ubicación, desarrollada con ReactJs, zustand, leaflet y la api de OpenWeather.</p>
-                            <div>
-                                <a href='https://github.com/AndersonFerrer/WeatherApp-v2' class="btn-view" target="_blank"> Codigo
-                                </a>
-                                <a href='https://weather-app-v2-chi.vercel.app'
-                                    class="btn-view" target="_blank"> Demo
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="action-exp"><img src="./assets/weatherapp-v2.png" alt="clima"></div>
-                </div>
-                <div class="exp-card" >
-                    <div class="desc-exp">
-                        <div class="text-desc">
-                            <h1>PetCare App</h1>
-                            <p>Aplicativo móvil de adopción, apoyo y búsqueda de mascotas desarrollado con Flutter y
-                                SupaBase</p>
-                            <div>
-                                <a href='https://github.com/jor-mg/petcare2_app' class="btn-view" target="_blank">
-                                    Codigo
-                                </a>
-                                <a href='https://docs.google.com/presentation/d/1mbhVmRF8zbeQ5VDtyNtvvuMAGYtgMjn8FKM_LIPnO7Q/edit#slide=id.p'
-                                    class="btn-view" target="_blank"> Demo
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="action-exp"><img src="./assets/petcare.jpeg" alt="clima"></div>
-                </div>
+        <h1>Tecnologías y herramientas</h1>
+        <div class="contain-skills">
+          <div class="card-skill">
+            <div class="skill">
+              <img width="70px" src="./assets/html.svg" alt="html" />
             </div>
-
-        </div>
-        <div class="form" id="form">
-            <h1>Contáctame</h1>
-            <p style="font-size: 24px;">¿Interesado en trabajar juntos? Complete el siguiente formulario con información
-                sobre su proyecto y me pondre en contacto con usted lo antes posible. Por favor, espere un par de días
-                para que responda.</p>
-            <div class="contain-form">
-                <div class="contac-info">
-                    <span id="shape-form">
-
-                    </span>
-                    <h1>Información de Contacto</h1>
-                    <div>
-                        <i class="fa-solid fa-phone"></i>
-                        <p>+51 946 668 044</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-envelope"></i>
-                        <p><span>ferrer.280104</span><span>@gmail.com</span></p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>Chimbote, Perú</p>
-                    </div>
-                </div>
-                <form action="https://formsubmit.co/0434b84d82acca432db0ca9a87942a57" method="POST" class="contac-form">
-                    <div class="name-email">
-                        <div>
-                            <label id="1" for="name">
-                                Nombre </label>
-                            <input id="name1" required onblur="blurLabel(1, name1)" onfocus="focusLabel(1)" type="text"
-                                name="name">
-                        </div>
-                        <div>
-                            <label id="2" for="email">Email</label>
-                            <input id="email" required onblur="blurLabel(2, email)" onfocus="focusLabel(2)"
-                                pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
-                                type="email" name="email">
-                        </div>
-                    </div>
-                    <div>
-                        <label id="3" for="subject">Asunto</label>
-                        <input id="subject" required onblur="blurLabel(3, subject)" onfocus="focusLabel(3)" type="text"
-                            name="subject">
-                    </div>
-                    <div>
-                        <label id="4" for="message">Mensaje</label>
-                        <textarea id='message' required onblur="blurLabel(4, message)" onfocus="focusLabel(4)"
-                            style="resize: none;" name="message" id="message" maxlength="600" rows="8"></textarea>
-                    </div>
-                    <input id="submit-form" type="submit" value="Enviar">
-
-                    <!--  <input type="hidden" name="_next" value="false"> -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-
-                </form>
+            <div class="skill-text">
+              <h1>HTML5</h1>
             </div>
-        </div>
-        <div id="footer">
-            <div class="contain-footer">
-                <div class="footer-design">
-                    <h1>Desarrollado por Anderson Ferrer © 2023</h1>
-                </div>
-                <div class="links-footer">
-                    <a href="#portada">
-                        <i style="color: white; font-size: 24px;" class="fa-solid fa-arrow-up"></i>
-                    </a>
-                    <a href="https://www.facebook.com/andersonferrer.28" target="_blank" id="twitter">
-                        <i class="fa-brands fa-facebook" style="font-size: 39px; color: #039be5;"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/anderson-ferrer/" target="_blank" id="linkedin">
-                        <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z">
-                            </path>
-                        </svg>
-                    </a>
-
-                    <a href="https://github.com/AndersonFerrer" target="_blank" id="github">
-                        <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <img width="70px" src="./assets/css.svg" alt="css" />
             </div>
-
-
+            <div class="skill-text">
+              <h1>CSS</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <img width="70px" src="assets/javascript.svg" alt="javascript" />
+            </div>
+            <div class="skill-text">
+              <h1>Javascript</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill"><i class="fa-brands fa-react"></i></div>
+            <div class="skill-text">
+              <h1>React</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <img width="100px" src="./assets/tailwind.png" alt="tailwind" />
+            </div>
+            <div class="skill-text">
+              <h1>Tailwind</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                viewBox="0 0 128 128"
+              >
+                <g fill="#fff" fill-rule="evenodd">
+                  <path
+                    fill-rule="nonzero"
+                    d="M63.951.001C28.696.001.001 28.696.001 63.951s28.695 63.95 63.95 63.95s63.95-28.695 63.95-63.95S99.206.001 63.95.001zm0 10.679c29.484 0 53.272 23.787 53.272 53.271s-23.788 53.272-53.272 53.272s-53.272-23.787-53.272-53.272S34.467 10.68 63.951 10.68"
+                    color="#000"
+                  />
+                  <path
+                    d="M48.39 60.716c14.004-11.44 27.702-23.278 42.011-34.384c-7.505 11.533-15.224 22.913-22.729 34.445c-6.437.03-12.875.03-19.282-.061m11.838 6.376c6.468 0 12.905 0 19.342.092c-14.095 11.38-27.732 23.309-42.071 34.384c7.505-11.533 15.224-22.943 22.729-34.476"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="skill-text">
+              <h1>SocketIO</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                viewBox="0 0 128 128"
+              >
+                <path
+                  d="M93.809 92.112c.785-6.533.55-7.492 5.416-6.433l1.235.108c3.742.17 8.637-.602 11.513-1.938c6.191-2.873 9.861-7.668 3.758-6.409c-13.924 2.873-14.881-1.842-14.881-1.842c14.703-21.815 20.849-49.508 15.543-56.287c-14.47-18.489-39.517-9.746-39.936-9.52l-.134.025c-2.751-.571-5.83-.912-9.289-.968c-6.301-.104-11.082 1.652-14.709 4.402c0 0-44.683-18.409-42.604 23.151c.442 8.841 12.672 66.898 27.26 49.362c5.332-6.412 10.484-11.834 10.484-11.834c2.558 1.699 5.622 2.567 8.834 2.255l.249-.212c-.078.796-.044 1.575.099 2.497c-3.757 4.199-2.653 4.936-10.166 6.482c-7.602 1.566-3.136 4.355-.221 5.084c3.535.884 11.712 2.136 17.238-5.598l-.22.882c1.474 1.18 1.375 8.477 1.583 13.69c.209 5.214.558 10.079 1.621 12.948s2.317 10.256 12.191 8.14c8.252-1.764 14.561-4.309 15.136-27.985"
+                />
+                <path
+                  d="M75.458 125.256c-4.367 0-7.211-1.689-8.938-3.32c-2.607-2.46-3.641-5.629-4.259-7.522l-.267-.79c-1.244-3.358-1.666-8.193-1.916-14.419c-.038-.935-.064-1.898-.093-2.919c-.021-.747-.047-1.684-.085-2.664a18.8 18.8 0 0 1-4.962 1.568c-3.079.526-6.389.356-9.84-.507c-2.435-.609-4.965-1.871-6.407-3.82c-4.203 3.681-8.212 3.182-10.396 2.453c-3.853-1.285-7.301-4.896-10.542-11.037c-2.309-4.375-4.542-10.075-6.638-16.943c-3.65-11.96-5.969-24.557-6.175-28.693C4.292 23.698 7.777 14.44 15.296 9.129C27.157.751 45.128 5.678 51.68 7.915c4.402-2.653 9.581-3.944 15.433-3.851c3.143.051 6.136.327 8.916.823c2.9-.912 8.628-2.221 15.185-2.139c12.081.144 22.092 4.852 28.949 13.615c4.894 6.252 2.474 19.381.597 26.651c-2.642 10.226-7.271 21.102-12.957 30.57c1.544.011 3.781-.174 6.961-.831c6.274-1.295 8.109 2.069 8.607 3.575c1.995 6.042-6.677 10.608-9.382 11.864c-3.466 1.609-9.117 2.589-13.745 2.377l-.202-.013l-1.216-.107l-.12 1.014l-.116.991c-.311 11.999-2.025 19.598-5.552 24.619c-3.697 5.264-8.835 6.739-13.361 7.709c-1.544.33-2.947.474-4.219.474m-9.19-43.671c2.819 2.256 3.066 6.501 3.287 14.434c.028.99.054 1.927.089 2.802c.106 2.65.355 8.855 1.327 11.477c.137.371.26.747.39 1.146c1.083 3.316 1.626 4.979 6.309 3.978c3.931-.843 5.952-1.599 7.534-3.851c2.299-3.274 3.585-9.86 3.821-19.575l4.783.116l-4.75-.57l.14-1.186c.455-3.91.783-6.734 3.396-8.602c2.097-1.498 4.486-1.353 6.389-1.01c-2.091-1.58-2.669-3.433-2.823-4.193l-.399-1.965l1.121-1.663c6.457-9.58 11.781-21.354 14.609-32.304c2.906-11.251 2.02-17.226 1.134-18.356c-11.729-14.987-32.068-8.799-34.192-8.097l-.359.194l-1.8.335l-.922-.191c-2.542-.528-5.366-.82-8.393-.869c-4.756-.08-8.593 1.044-11.739 3.431l-2.183 1.655l-2.533-1.043c-5.412-2.213-21.308-6.662-29.696-.721c-4.656 3.298-6.777 9.76-6.305 19.207c.156 3.119 2.275 14.926 5.771 26.377c4.831 15.825 9.221 21.082 11.054 21.693c.32.108 1.15-.537 1.976-1.529a271 271 0 0 1 10.694-12.07l2.77-2.915l3.349 2.225c1.35.897 2.839 1.406 4.368 1.502l7.987-6.812l-1.157 11.808c-.026.265-.039.626.065 1.296l.348 2.238l-1.51 1.688l-.174.196l4.388 2.025z"
+                />
+                <path
+                  fill="#336791"
+                  d="M115.731 77.44c-13.925 2.873-14.882-1.842-14.882-1.842c14.703-21.816 20.849-49.51 15.545-56.287C101.924.823 76.875 9.566 76.457 9.793l-.135.024c-2.751-.571-5.83-.911-9.291-.967c-6.301-.103-11.08 1.652-14.707 4.402c0 0-44.684-18.408-42.606 23.151c.442 8.842 12.672 66.899 27.26 49.363c5.332-6.412 10.483-11.834 10.483-11.834c2.559 1.699 5.622 2.567 8.833 2.255l.25-.212c-.078.796-.042 1.575.1 2.497c-3.758 4.199-2.654 4.936-10.167 6.482c-7.602 1.566-3.136 4.355-.22 5.084c3.534.884 11.712 2.136 17.237-5.598l-.221.882c1.473 1.18 2.507 7.672 2.334 13.557s-.29 9.926.871 13.082c1.16 3.156 2.316 10.256 12.192 8.14c8.252-1.768 12.528-6.351 13.124-13.995c.422-5.435 1.377-4.631 1.438-9.49l.767-2.3c.884-7.367.14-9.743 5.225-8.638l1.235.108c3.742.17 8.639-.602 11.514-1.938c6.19-2.871 9.861-7.667 3.758-6.408"
+                />
+                <path
+                  fill="#fff"
+                  d="M75.957 122.307c-8.232 0-10.84-6.519-11.907-9.185c-1.562-3.907-1.899-19.069-1.551-31.503a1.59 1.59 0 0 1 1.64-1.55a1.594 1.594 0 0 1 1.55 1.639c-.401 14.341.168 27.337 1.324 30.229c1.804 4.509 4.54 8.453 12.275 6.796c7.343-1.575 10.093-4.359 11.318-11.46c.94-5.449 2.799-20.951 3.028-24.01a1.593 1.593 0 0 1 1.71-1.472a1.597 1.597 0 0 1 1.472 1.71c-.239 3.185-2.089 18.657-3.065 24.315c-1.446 8.387-5.185 12.191-13.794 14.037c-1.463.313-2.792.453-4 .454M31.321 90.466a6.7 6.7 0 0 1-2.116-.35c-5.347-1.784-10.44-10.492-15.138-25.885c-3.576-11.717-5.842-23.947-6.041-27.922c-.589-11.784 2.445-20.121 9.02-24.778c13.007-9.216 34.888-.44 35.813-.062a1.596 1.596 0 0 1-1.207 2.955c-.211-.086-21.193-8.492-32.768-.285c-5.622 3.986-8.203 11.392-7.672 22.011c.167 3.349 2.284 15.285 5.906 27.149c4.194 13.742 8.967 22.413 13.096 23.79c.648.216 2.62.873 5.439-2.517A245 245 0 0 1 45.88 73.046a1.596 1.596 0 0 1 2.304 2.208c-.048.05-4.847 5.067-10.077 11.359c-2.477 2.979-4.851 3.853-6.786 3.853m69.429-13.445a1.596 1.596 0 0 1-1.322-2.487c14.863-22.055 20.08-48.704 15.612-54.414c-5.624-7.186-13.565-10.939-23.604-11.156c-7.433-.16-13.341 1.738-14.307 2.069l-.243.099c-.971.305-1.716-.227-1.997-.849a1.6 1.6 0 0 1 .631-2.025c.046-.027.192-.089.429-.176l-.021.006l.021-.007c1.641-.601 7.639-2.4 15.068-2.315c11.108.118 20.284 4.401 26.534 12.388c2.957 3.779 2.964 12.485.019 23.887c-3.002 11.625-8.651 24.118-15.497 34.277c-.306.457-.81.703-1.323.703m.76 10.21c-2.538 0-4.813-.358-6.175-1.174c-1.4-.839-1.667-1.979-1.702-2.584c-.382-6.71 3.32-7.878 5.208-8.411c-.263-.398-.637-.866-1.024-1.349c-1.101-1.376-2.609-3.26-3.771-6.078c-.182-.44-.752-1.463-1.412-2.648c-3.579-6.418-11.026-19.773-6.242-26.612c2.214-3.165 6.623-4.411 13.119-3.716C97.6 28.837 88.5 10.625 66.907 10.271c-6.494-.108-11.82 1.889-15.822 5.93c-8.96 9.049-8.636 25.422-8.631 25.586a1.595 1.595 0 1 1-3.19.084c-.02-.727-.354-17.909 9.554-27.916C53.455 9.272 59.559 6.96 66.96 7.081c13.814.227 22.706 7.25 27.732 13.101c5.479 6.377 8.165 13.411 8.386 15.759c.165 1.746-1.088 2.095-1.341 2.147l-.576.013c-6.375-1.021-10.465-.312-12.156 2.104c-3.639 5.201 3.406 17.834 6.414 23.229c.768 1.376 1.322 2.371 1.576 2.985c.988 2.396 2.277 4.006 3.312 5.3c.911 1.138 1.7 2.125 1.982 3.283c.131.23 1.99 2.98 13.021.703c2.765-.57 4.423-.083 4.93 1.45c.997 3.015-4.597 6.532-7.694 7.97c-2.775 1.29-7.204 2.106-11.036 2.106m-4.696-4.021c.35.353 2.101.962 5.727.806c3.224-.138 6.624-.839 8.664-1.786c2.609-1.212 4.351-2.567 5.253-3.492l-.5.092c-7.053 1.456-12.042 1.262-14.828-.577a6 6 0 0 1-.54-.401c-.302.119-.581.197-.78.253c-1.58.443-3.214.902-2.996 5.105m-45.562 8.915c-1.752 0-3.596-.239-5.479-.71c-1.951-.488-5.24-1.957-5.19-4.37c.057-2.707 3.994-3.519 5.476-3.824c5.354-1.103 5.703-1.545 7.376-3.67c.488-.619 1.095-1.39 1.923-2.314c1.229-1.376 2.572-2.073 3.992-2.073c.989 0 1.8.335 2.336.558c1.708.708 3.133 2.42 3.719 4.467c.529 1.847.276 3.625-.71 5.006c-3.237 4.533-7.886 6.93-13.443 6.93m-7.222-4.943c.481.372 1.445.869 2.518 1.137c1.631.408 3.213.615 4.705.615c4.546 0 8.196-1.882 10.847-5.594c.553-.774.387-1.757.239-2.274c-.31-1.083-1.08-2.068-1.873-2.397c-.43-.178-.787-.314-1.115-.314c-.176 0-.712 0-1.614 1.009a41 41 0 0 0-1.794 2.162c-2.084 2.646-3.039 3.544-9.239 4.821c-1.513.31-2.289.626-2.674.835m12.269-7.36a1.596 1.596 0 0 1-1.575-1.354a8 8 0 0 1-.08-.799c-4.064-.076-7.985-1.82-10.962-4.926c-3.764-3.927-5.477-9.368-4.699-14.927c.845-6.037.529-11.366.359-14.229c-.047-.796-.081-1.371-.079-1.769c.003-.505.013-1.844 4.489-4.113c1.592-.807 4.784-2.215 8.271-2.576c5.777-.597 9.585 1.976 10.725 7.246c3.077 14.228.244 20.521-1.825 25.117c-.385.856-.749 1.664-1.04 2.447l-.257.69c-1.093 2.931-2.038 5.463-1.748 7.354a1.595 1.595 0 0 1-1.335 1.819zM42.464 42.26l.062 1.139c.176 2.974.504 8.508-.384 14.86c-.641 4.585.759 9.06 3.843 12.276c2.437 2.542 5.644 3.945 8.94 3.945h.068c.369-1.555.982-3.197 1.642-4.966l.255-.686c.329-.884.714-1.74 1.122-2.646c1.991-4.424 4.47-9.931 1.615-23.132c-.565-2.615-1.936-4.128-4.189-4.627c-4.628-1.022-11.525 2.459-12.974 3.837m9.63-.677c-.08.564 1.033 2.07 2.485 2.271c1.449.203 2.689-.975 2.768-1.539s-1.033-1.186-2.485-1.388s-2.691.092-2.768.656m2.818 2.826l-.407-.028c-.9-.125-1.81-.692-2.433-1.518c-.219-.29-.576-.852-.505-1.354c.101-.736.999-1.177 2.4-1.177c.313 0 .639.023.967.069c.766.106 1.477.327 2.002.62c.91.508.977 1.075.936 1.368c-.112.813-1.405 2.02-2.96 2.02m-2.289-2.732c.045.348.907 1.496 2.029 1.651l.261.018c1.036 0 1.81-.815 1.901-1.082c-.096-.182-.762-.634-2.025-.81a6 6 0 0 0-.821-.059c-.812 0-1.243.183-1.345.282m43.605-1.245c.079.564-1.033 2.07-2.484 2.272c-1.45.202-2.691-.975-2.771-1.539c-.076-.564 1.036-1.187 2.486-1.388c1.45-.203 2.689.092 2.769.655m-2.819 2.56c-1.396 0-2.601-1.086-2.7-1.791c-.115-.846 1.278-1.489 2.712-1.688c.316-.044.629-.066.93-.066c1.238 0 2.058.363 2.14.949c.053.379-.238.964-.739 1.492c-.331.347-1.026.948-1.973 1.079zm.943-3.013q-.416 0-.856.061c-1.441.201-2.301.779-2.259 1.089c.048.341.968 1.332 2.173 1.332l.297-.021c.787-.109 1.378-.623 1.66-.919c.443-.465.619-.903.598-1.052c-.028-.198-.56-.49-1.613-.49m3.965 32.843a1.594 1.594 0 0 1-1.324-2.483c3.398-5.075 2.776-10.25 2.175-15.255c-.257-2.132-.521-4.337-.453-6.453c.07-2.177.347-3.973.614-5.71c.317-2.058.617-4.002.493-6.31a1.595 1.595 0 1 1 3.186-.172c.142 2.638-.197 4.838-.525 6.967c-.253 1.643-.515 3.342-.578 5.327c-.061 1.874.178 3.864.431 5.97c.64 5.322 1.365 11.354-2.691 17.411a1.6 1.6 0 0 1-1.328.708"
+                />
+              </svg>
+            </div>
+            <div class="skill-text">
+              <h1>PostgreSQL</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <img
+                width="120px"
+                src="https://repository-images.githubusercontent.com/180328715/fca49300-e7f1-11ea-9f51-cfd949b31560"
+                alt="html"
+              />
+            </div>
+            <div class="skill-text">
+              <h1>Zustand</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <img width="60px" src="./assets/flutter.png" alt="flutter" />
+            </div>
+            <div class="skill-text">
+              <h1>Flutter</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <img width="70px" src="./assets/git.png" alt="git" />
+            </div>
+            <div class="skill-text">
+              <h1>Git</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <img width="70px" src="./assets/nodejs.png" alt="git" />
+            </div>
+            <div class="skill-text">
+              <h1>NodeJs</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <img width="70px" src="./assets/ts.png" alt="github" />
+            </div>
+            <div class="skill-text">
+              <h1>TypeScript</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <img width="70px" src="./assets/gitlab.png" alt="github" />
+            </div>
+            <div class="skill-text">
+              <h1>GitLab</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <img width="70px" src="./assets/scrum.png" alt="github" />
+            </div>
+            <div class="skill-text">
+              <h1>Scrum</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M19.5 2h-15A2.5 2.5 0 0 0 2 4.5v15A2.5 2.5 0 0 0 4.5 22h15a2.5 2.5 0 0 0 2.5-2.5v-15A2.5 2.5 0 0 0 19.5 2m-8.8 15.2a1.2 1.2 0 0 1-1.2 1.2H5.8c-.66 0-1.2-.54-1.2-1.2V5.8a1.2 1.2 0 0 1 1.2-1.2h3.7c.66 0 1.2.54 1.2 1.2zm8.7-5c0 .66-.54 1.2-1.2 1.2h-3.7c-.66 0-1.2-.54-1.2-1.2V5.8c0-.66.54-1.2 1.2-1.2h3.7c.66 0 1.2.54 1.2 1.2z"
+                />
+              </svg>
+            </div>
+            <div class="skill-text">
+              <h1>Trello</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <img width="70px" src="./assets/express.png" alt="github" />
+            </div>
+            <div class="skill-text">
+              <h1>ExpressJS</h1>
+            </div>
+          </div>
+          <div class="card-skill">
+            <div class="skill">
+              <img width="70px" src="./assets/mongo.png" alt="github" />
+            </div>
+            <div class="skill-text">
+              <h1>MongoDB</h1>
+            </div>
+          </div>
         </div>
+
+        <h1>Formación Académica</h1>
+        <div class="contain-education">
+          <div class="card-education">
+            <div class="academic-bg">
+              <img id="henry" src="./assets/henryB.png" alt="henry" />
+            </div>
+            <div class="text-education">
+              <h1>Programacion Web Frontend</h1>
+              <p>2022 - SoyHenry</p>
+            </div>
+          </div>
+          <div class="card-education">
+            <div class="academic-bg">
+              <img src="./assets/certus.png" alt="certus" />
+            </div>
+            <div class="text-education">
+              <h1>Desarrollador Móvil con Flutter</h1>
+              <p>2023 - CERTUS</p>
+            </div>
+          </div>
+          <div class="card-education">
+            <div class="academic-bg">
+              <img id="alura" src="./assets/alura.png" alt="alura" />
+            </div>
+            <div class="text-education">
+              <h1>Programación Web Frontend</h1>
+              <p>2023 - Oracle ONE</p>
+            </div>
+          </div>
+          <div class="card-education">
+            <div class="academic-bg">
+              <img
+                style="object-fit: cover; width: 280px"
+                src="./assets/utp.png"
+                alt="utp"
+              />
+            </div>
+            <div class="text-education">
+              <h1>Ingenieria de Sistemas e Informática</h1>
+              <p>En curso - UTP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="proyects" id="proyects">
+        <h1>Experiencia Personal</h1>
+        <div class="contain-exp">
+          <div class="exp-card" id="reverse">
+            <div class="desc-exp">
+              <div class="text-desc">
+                <h1>FyraPOS</h1>
+                <p>
+                  SaaS para la gestión de restaurantes. La aplicación permite
+                  realizar pedidos y efectuar pagos con facturación electrónica.
+                  Además, el sistema ofrece comunicación en tiempo real, para
+                  los estados de la orden y mesas, al igual que notificaciones
+                  entre los demás roles. (Usuario de prueba:
+                  pedro.gez@gmail.com, 123456).
+                </p>
+                <div>
+                  <a
+                    href="https://pos-mania.pages.dev/login"
+                    class="btn-view"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="action-exp">
+              <img src="./assets/FyraPOS.png" alt="FyraPOS" />
+            </div>
+          </div>
+          <div class="exp-card" id="reverse">
+            <div class="desc-exp">
+              <div class="text-desc">
+                <h1>Weather App V2</h1>
+                <p>
+                  Aplicación para obtener información del clima mediante la
+                  busqueda de una ciudad o localizada mediante su ubicación,
+                  desarrollada con ReactJs, zustand, leaflet y la api de
+                  OpenWeather.
+                </p>
+                <div>
+                  <a
+                    href="https://github.com/AndersonFerrer/WeatherApp-v2"
+                    class="btn-view"
+                    target="_blank"
+                  >
+                    Codigo
+                  </a>
+                  <a
+                    href="https://weather-app-v2-chi.vercel.app"
+                    class="btn-view"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="action-exp">
+              <img src="./assets/weatherapp-v2.png" alt="clima" />
+            </div>
+          </div>
+          <div class="exp-card">
+            <div class="desc-exp">
+              <div class="text-desc">
+                <h1>flickSpot</h1>
+                <p>
+                  Aplicación para búsqueda de películas hecha con ReactJs y
+                  TailwindCSS, consumiendo la api de TMDB (En producción).
+                </p>
+                <div>
+                  <a
+                    href="https://github.com/AndersonFerrer/FlickSpot"
+                    class="btn-view"
+                    target="_blank"
+                  >
+                    Codigo
+                  </a>
+                  <a
+                    href="https://flickspot-web.netlify.app/"
+                    class="btn-view"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="action-exp">
+              <img src="./assets/flickspot.jpg" alt="flickspot" />
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <div class="desc-exp">
+              <div class="text-desc">
+                <h1>PetCare App</h1>
+                <p>
+                  Aplicativo móvil de adopción, apoyo y búsqueda de mascotas
+                  desarrollado con Flutter y SupaBase
+                </p>
+                <div>
+                  <a
+                    href="https://github.com/jor-mg/petcare2_app"
+                    class="btn-view"
+                    target="_blank"
+                  >
+                    Codigo
+                  </a>
+                  <a
+                    href="https://docs.google.com/presentation/d/1mbhVmRF8zbeQ5VDtyNtvvuMAGYtgMjn8FKM_LIPnO7Q/edit#slide=id.p"
+                    class="btn-view"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="action-exp">
+              <img src="./assets/petcare.jpeg" alt="clima" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form" id="form">
+        <h1>Contáctame</h1>
+        <p style="font-size: 24px">
+          ¿Interesado en trabajar juntos? Complete el siguiente formulario con
+          información sobre su proyecto y me pondre en contacto con usted lo
+          antes posible. Por favor, espere un par de días para que responda.
+        </p>
+        <div class="contain-form">
+          <div class="contac-info">
+            <span id="shape-form"> </span>
+            <h1>Información de Contacto</h1>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <p>+51 946 668 044</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <p><span>ferrer.280104</span><span>@gmail.com</span></p>
+            </div>
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Chimbote, Perú</p>
+            </div>
+          </div>
+          <form
+            action="https://formsubmit.co/0434b84d82acca432db0ca9a87942a57"
+            method="POST"
+            class="contac-form"
+          >
+            <div class="name-email">
+              <div>
+                <label id="1" for="name"> Nombre </label>
+                <input
+                  id="name1"
+                  required
+                  onblur="blurLabel(1, name1)"
+                  onfocus="focusLabel(1)"
+                  type="text"
+                  name="name"
+                />
+              </div>
+              <div>
+                <label id="2" for="email">Email</label>
+                <input
+                  id="email"
+                  required
+                  onblur="blurLabel(2, email)"
+                  onfocus="focusLabel(2)"
+                  pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+                  type="email"
+                  name="email"
+                />
+              </div>
+            </div>
+            <div>
+              <label id="3" for="subject">Asunto</label>
+              <input
+                id="subject"
+                required
+                onblur="blurLabel(3, subject)"
+                onfocus="focusLabel(3)"
+                type="text"
+                name="subject"
+              />
+            </div>
+            <div>
+              <label id="4" for="message">Mensaje</label>
+              <textarea
+                id="message"
+                required
+                onblur="blurLabel(4, message)"
+                onfocus="focusLabel(4)"
+                style="resize: none"
+                name="message"
+                id="message"
+                maxlength="600"
+                rows="8"
+              ></textarea>
+            </div>
+            <input id="submit-form" type="submit" value="Enviar" />
+
+            <!--  <input type="hidden" name="_next" value="false"> -->
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+          </form>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="contain-footer">
+          <div class="footer-design">
+            <h1>Desarrollado por Anderson Ferrer © 2023</h1>
+          </div>
+          <div class="links-footer">
+            <a href="#portada">
+              <i
+                style="color: white; font-size: 24px"
+                class="fa-solid fa-arrow-up"
+              ></i>
+            </a>
+            <a
+              href="https://www.facebook.com/andersonferrer.28"
+              target="_blank"
+              id="twitter"
+            >
+              <i
+                class="fa-brands fa-facebook"
+                style="font-size: 39px; color: #039be5"
+              ></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/anderson-ferrer/"
+              target="_blank"
+              id="linkedin"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                height="24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                ></path>
+              </svg>
+            </a>
+
+            <a
+              href="https://github.com/AndersonFerrer"
+              target="_blank"
+              id="github"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                height="24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./index.js"></script>
-
-</body>
-
+  </body>
 </html>
